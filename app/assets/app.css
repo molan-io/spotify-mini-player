@@ -1,0 +1,111 @@
+/* Makes window draggable */
+body {
+  -webkit-app-region: drag;
+  background-color: transparent;
+}
+
+/* Remove scrolling */
+html,
+body {
+  overflow: hidden !important;
+}
+
+/* Disables window moving from inputs and buttons*/
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+input[type="text"],
+button,
+textarea {
+  -webkit-app-region: no-drag;
+}
+
+/* Container */
+.container {
+  border-radius: 12px;
+  background-color: rgb(39, 39, 39);
+  padding-bottom: 0.8em;
+}
+
+/* Song info */
+.song-info {
+  color: white;
+  position: relative;
+  top: 8px;
+  overflow: hidden;
+  border: solid;
+  border-color: rgb(39, 39, 39);
+}
+
+.song-info .song {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin: 0;
+}
+
+.song-info .artist {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: #929292;
+  font-size: 0.9rem;
+}
+
+/* Actions */
+.actions {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  background: none;
+  color: #929292;
+  text-align: center;
+  border: none;
+  margin-left: 0.8em;
+  margin-right: 0.8em;
+  max-width: 22px;
+}
+button:hover {
+  color: #b4b4b4;
+}
+button:active {
+  color: white;
+}
+button:focus {
+  outline: none;
+}
+
+.song-container {
+  display: flex;
+  border-top-right-radius: 12px;
+  margin-bottom: 10px;
+}
+
+img {
+  position: relative;
+  right: 1em;
+  border-top-left-radius: 12px;
+}
+
+/* Active action buttos */
+.active-button {
+  background: none;
+  color: #1db954;
+  text-align: center;
+  border: none;
+  margin-left: 0.8em;
+  margin-right: 0.8em;
+  max-width: 22px;
+}
+
+#shuffle:hover {
+  color: #21d35f;
+}
+#shuffle:active {
+  color: white;
+}
+#shuffle:focus {
+  outline: none;
+}
